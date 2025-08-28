@@ -23,10 +23,12 @@ public class Main {
 
 		notaFinal = ((nota1 + nota2 + nota3 + nota4) / 4);
 
-		if (notaFinal > 6) {
-			System.out.println("Parabens! Voce passou com nota:" + notaFinal);
-		} else {
-			System.out.println("Ah não! Você bombou, que vergonha! Nota:" + notaFinal);
+		if (notaFinal >= 6) {
+			System.out.println("Parabens! Voce passou com nota: " + notaFinal);
+		} else if(notaFinal < 6 && notaFinal >= 2){
+			System.out.println("Foi quase! Infelizmente ficou de recuperação. Nota: " + notaFinal);
+		}else {
+			System.out.println("Ah não! Você bombou, que vergonha! Nota: " + notaFinal);
 		}
 
 		teclado.close();
